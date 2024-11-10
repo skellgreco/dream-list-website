@@ -1,6 +1,6 @@
 /* 
 page.jsx
-Main Land Page for /
+Main Website's Land Page for /
 */
 
 import ListFunction from "@/app/(elements)/list";
