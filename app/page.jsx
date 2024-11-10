@@ -3,8 +3,6 @@ page.jsx
 Main Website's Land Page for /
 */
 
-import ListFunction from "@/app/(elements)/list";
-
 export default function Page() {
   return (
     <>
