@@ -1,0 +1,259 @@
+/* Custom CSS File */
+/* The Project contains support for Tailwind */
+/* Too many elements to write comments on each. The names should be pretty straight forward :P */
+
+@import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  padding: 0;
+  margin: 0;
+  background: radial-gradient(circle at -10% -10%, #350526, transparent 40%),
+    /* Red glow */
+      radial-gradient(circle at 120% 120%, #350526, transparent 40%),
+    /* Red glow */ #0c011c; /* Dark base color */
+  font-family: Cabin, Arial;
+  background-attachment: fixed; /*edit*/
+  color: white;
+}
+
+.todo-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 20px;
+  margin-inline: 10px;
+}
+
+.todo-item {
+  display: grid;
+  grid-template-columns: 1fr 8fr;
+  border-radius: 10px;
+  margin: 10px;
+
+  padding: 5%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Very soft shadow */
+  background: radial-gradient(circle at -10% -10%, #350526, transparent 70%),
+    /* Red glow */
+      radial-gradient(circle at 120% 120%, #350526, transparent 70%),
+    /* Red glow */ #0c011c; /* Dark base color */
+  background-blend-mode: soft-light;
+  backdrop-filter: blur(10px); /* Blurred effect */
+  background-color: rgba(
+    23,
+    22,
+    22,
+    0.18
+  ); /* Slightly transparent background */
+}
+
+.checkboxes {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 20px;
+  border-left: 0.2px solid rgba(255, 255, 255, 0.534);
+  padding-left: 13px;
+  margin-top: 10px;
+}
+
+.password-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+.password-item {
+  background: radial-gradient(circle at -10% -10%, #350526, transparent 40%),
+    /* Red glow */
+      radial-gradient(circle at 120% 120%, #350526, transparent 40%),
+    /* Red glow */ #140925; /* Dark base color */
+  height: 120%;
+  border-radius: 10px;
+  padding: 10px;
+  margin-inline: 20%;
+  border: 1px solid rgba(255, 255, 255, 0);
+  transition: 0.5s;
+  align-items: center;
+}
+
+.password-item:hover {
+  /* background-color: rgb(19, 19, 19); */
+  border-color: rgb(255, 0, 195);
+}
+
+.go-button {
+  background-color: rgb(0, 0, 0);
+  padding: 3px;
+  padding-inline: 7px;
+  margin-top: 13%;
+  border-radius: 4px;
+  border: 1px solid rgba(231, 231, 231, 0.491);
+  transition: 0.3s;
+  padding-block: 8px;
+}
+
+.go-button:hover {
+  background-color: aliceblue;
+  color: black;
+}
+
+.checkBoxGrid {
+  display: grid;
+  grid-template-columns: 1fr 10fr 1fr;
+}
+
+.text-checkbox {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  word-break: break-all;
+}
+
+.title-checkbox {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  margin-right: 5px;
+}
+
+.nav-bar {
+  width: 100%;
+  background: #0000007c;
+  margin-inline: -10;
+  height: 70px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  color: rgb(198, 198, 198);
+}
+
+.nav-bar-buttons-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+  align-self: center;
+  color: rgb(255, 255, 255);
+  font-family: Inter;
+  margin-left: 33%;
+}
+
+.nav-bar-buttons {
+  transition: 0.2s;
+}
+
+.nav-bar-buttons:hover {
+  color: #ff00ae;
+}
+
+.credit-bar {
+  width: 100%;
+  background: #0000007c;
+  position: fixed;
+  bottom: 0;
+}
+
+.textbox {
+  background-color: rgb(35, 6, 66);
+  color: rgb(255, 255, 255);
+  outline: none;
+  border-radius: 5px;
+  padding: 5px;
+  padding-inline: 15px;
+  margin: 5px;
+}
+
+.btn-list {
+  background-color: #841050;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  transition: 0.3s;
+}
+
+.btn-list:hover {
+  background-color: #ffffff;
+  color: #841050;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+input[type="checkbox"] {
+  /* change "blue" browser chrome to yellow */
+  filter: invert(100%) hue-rotate(288deg) brightness(1);
+}
+
+.navtitle {
+  transition: 0.6s;
+}
+
+.navtitle:hover {
+  color: rgb(255, 0, 187);
+  --tw-gradient-from: #ec4899 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(236 72 153 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  --tw-gradient-to: rgb(244 114 182 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from),
+    #f472b6 var(--tw-gradient-via-position), var(--tw-gradient-to);
+  --tw-gradient-to: #ec4899 var(--tw-gradient-to-position);
+}
+
+.dim-effect {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.765
+  ); /* Adjust opacity for darkness level */
+  z-index: 1000; /* Ensure it overlays all content */
+}
+
+.rename-form {
+  display: grid;
+  place-items: center; /* Centers both horizontally and vertically */
+  height: 100vh;
+  width: 100vw;
+}
+
+.erase-button {
+  background-color: #720606;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  transition: 0.3s;
+}
+
+.erase-button:hover {
+  background-color: white;
+  color: #720606;
+}
+
+/* Leave this at the bottom */
+/* Responsive Media */
+@media only screen and (max-width: 768px) {
+  .password-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 50px;
+  }
+  .nav-bar-buttons-grid {
+    margin-left: 0;
+  }
+
+  .todo-item {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1 4;
+  }
+  .title-checkbox {
+    margin-bottom: 5px;
+    border-bottom: 1px solid #929292;
+    padding-bottom: 15px;
+  }
+}
